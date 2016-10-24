@@ -23,7 +23,7 @@ def main(args=None):
     # register handlers
     #poller.handlers.append(printer)
     
-    coucher = Coucher()
+    coucher = Coucher(**config.coucher)
     poller.handlers.append(coucher.handle)
     
     tweeter = Tweeter(**config.twitter)
