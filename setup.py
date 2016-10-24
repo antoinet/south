@@ -14,10 +14,10 @@ config = {
   'version': '0.1',
   'install_requires': [
      'nose', 'requests', 'tweepy', 'expiringdict',
-     'bunch', 'couchdbkit'],
+     'bunch', 'couchdbkit', 'PyYAML'],
   'packages': ['south'],
   'scripts': [],
-  'entry-points': {
+  'entry_points': {
     'console_scripts': ['south=south.__main__:main']
   },
   'name': 'South'
